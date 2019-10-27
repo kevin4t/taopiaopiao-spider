@@ -2,9 +2,9 @@
 
 自动爬取淘票票<已看电影和自己写的影评>(其中包括自己购过票的和未购票但进行过评分的电影)并更新至Hexo博客
 
-效果预览：[Tangerinew.](https://tangerinew.com)
+效果预览：[Tangerinew.](https://tangerinew.com/keep/index.html)
 
-![1572141255208](G:\taopiaopiao-spider\README\1572141255208.png)
+![1572141255208](G:\taopiaopiao-spider\README\1572141255208-1572142242072.png)
 
 ### Server
 
@@ -24,7 +24,7 @@ def get_init_cookie():
     ul.login()
 ```
 
-登录地址:https://login.taobao.com/member/login.jhtml,可以用于抓包。
+*登录地址:https://login.taobao.com/member/login.jhtml,可以用于抓包。*
 
 在终端运行app.py:
 
