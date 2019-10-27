@@ -32,6 +32,8 @@ def get_init_cookie():
 $ python app.py
 ```
 
+
+
 ### Client
 
 在Hexo项目文件夹下Source文件夹下新建一个文件夹，名称自定，并将Client内的文件全部放置于其中。
@@ -41,7 +43,7 @@ $ python app.py
 ```js
 function loadMoviesWatched() {
 	$.ajax({
-		url: 'YourUrl',
+		url: 'YourUrl',//替换成你自己的请求地址
 		dataType:'json',//服务器返回json格式数据
 		type:'get',//HTTP请求类型
 		timeout:10000,//超时时间设置为10秒；
@@ -52,7 +54,7 @@ function loadMoviesWatched() {
 }
 ```
 
-`注意：与GitPage绑定的Hexo为https协议，其只能向https请求信息，若服务器未绑定域名且未申请证书，则请求失败。`
+`注意：在服务器端需要使用Nginx将443端口反向代理到此进程运行的5000端口。因为与GitPage绑定的Hexo为https协议，其只能向https请求信息，若服务器未绑定域名且未申请证书，则请求失败。`
 
 ### 更新Hexo博客
 
