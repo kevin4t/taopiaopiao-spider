@@ -4,7 +4,7 @@
 
 效果预览：[Tangerinew.](https://tangerinew.com/keep/index.html)
 
-![1572141255208](G:\taopiaopiao-spider\README\1572141255208-1572142242072.png)
+![1572141255208](https://github.com/kevin4t/taopiaopiao-spider/blob/master/README/1572141255208.png?raw=true)
 
 ### Server
 
