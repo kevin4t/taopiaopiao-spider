@@ -36,6 +36,24 @@ $ python app.py
 
 在Hexo项目文件夹下Source文件夹下新建一个文件夹，名称自定，并将Client内的文件全部放置于其中。
 
+修改index.html中Ajax请求的地址，换成自己的服务器。
+
+```js
+function loadMoviesWatched() {
+	$.ajax({
+		url: 'YourUrl',
+		dataType:'json',//服务器返回json格式数据
+		type:'get',//HTTP请求类型
+		timeout:10000,//超时时间设置为10秒；
+		success:function(data){
+			...
+		}
+	})
+}
+```
+
+`注意：与GitPage绑定的Hexo为https协议，其只能向https请求信息，若服务器未绑定域名且未申请证书，则请求失败。`
+
 ### 更新Hexo博客
 
 ```bash
